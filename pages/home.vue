@@ -7,17 +7,20 @@
 
     <section class="grid">
       <NuxtLink to="/modules" class="module-card">
-        <h2>🧁 Modules</h2>
+        <Icon icon="twemoji:cupcake" class="card-icon" />
+        <h2>Modules</h2>
         <p>Snack-themed tools for ambient workflows.</p>
       </NuxtLink>
 
       <NuxtLink to="/lore" class="module-card">
-        <h2>📜 Lore</h2>
+        <Icon icon="material-symbols:menu-book-outline-rounded" class="card-icon" />
+        <h2>Lore</h2>
         <p>How this started and where the inspiration came from.</p>
       </NuxtLink>
 
       <NuxtLink to="/echoes" class="module-card">
-        <h2>🌫️ Echoes</h2>
+        <Icon icon="ph:waveform-light" class="card-icon" />
+        <h2>Echoes</h2>
         <p>Journaling overlays and emotional feedback loops.</p>
       </NuxtLink>
     </section>
@@ -26,6 +29,7 @@
 
 <script setup>
 //import { theme } from '~/composables/useTheme'
+import { Icon } from '@iconify/vue'
 </script>
 
 <style scoped>
@@ -77,7 +81,6 @@
   max-width: 960px;
 }
 
-/* NuxtLink as card */
 .module-card {
   backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.08);
@@ -95,5 +98,15 @@
 .module-card:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.12);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.module-card:hover .card-icon {
+  transform: scale(1.1);
 }
 </style>
