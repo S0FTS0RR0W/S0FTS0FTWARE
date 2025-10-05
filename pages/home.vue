@@ -7,7 +7,7 @@
 
     <section class="grid">
       <NuxtLink to="/modules" class="module-card">
-        <Icon icon="twemoji:cupcake" class="card-icon" />
+        <Icon icon="material-symbols:blur-linear-outline-rounded" class="card-icon" />
         <h2>Modules</h2>
         <p>Snack-themed tools for ambient workflows.</p>
       </NuxtLink>
